@@ -52,7 +52,10 @@ app.get('/msg', (req, res, next) => {
 });
 app.get('/instance', (req, res, next) => {
   next(new Error("I'm a prototype error"))
-})
+});
+app.get('/raw', (req, res, next) => {
+  next(new CErr())
+});
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

@@ -6,13 +6,16 @@
 
 const app = require('../app'),
       debug = require('debug')('app:server'),
-      http = require('http');
+      http = require('http'),
+      logger = require('../winston.js'),
+      config = require('../config.js');
 
 /**
  * Get port from environment and store in Express.
  */
 
-let port = normalizePort(process.env.PORT || '7000');
+// let port = normalizePort(process.env.PORT || '7000');
+let port = normalizePort(config.port || '7000');
 app.set('port', port);
 
 /**

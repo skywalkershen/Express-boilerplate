@@ -8,7 +8,7 @@ class CErr {
             uid = uuidv4(),
             timeStamp = new Date();
         timeStamp = timeStamp.toISOString();
-        userMsg = statusCode !== 404 ? (!userMsg ? `${httpError.name}: please contact us with error id: ${uid}` : `${userMsg}:  please contact us with error id: ${uid}`) : httpError.name;
+        userMsg = statusCode !== 404 ? (!userMsg ? `${httpError.name}: please contact us with error id:${uid}` : `${userMsg}:  please contact us with error id: ${uid}`) : httpError.name;
         this.id = uid;
         this.timeStamp = timeStamp;
         this.message = httpError.message;
