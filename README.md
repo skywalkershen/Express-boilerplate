@@ -1,5 +1,5 @@
 # Express boilerplate
-A boilerplate with error handling and config file.
+An express boilerplate hiding detaild error info from user.
 
 
 ## How to use
